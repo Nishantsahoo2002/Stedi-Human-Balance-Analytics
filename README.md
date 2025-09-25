@@ -1,2 +1,7 @@
 # Stedi-Human-Balance-Analytics
-The STEDI Team has been hard at work developing a hardware STEDI Step Trainer that:  trains the user to do a STEDI balance exercise; and has sensors on the device that collect data to train a machine-learning algorithm to detect steps;
+This is an analytics project where there are 3 datasets provided for customer, accelerometer and steptrainer. We have to filter out data and make AWS glue jobs which will be useful for analysis
+CustomerLanding -> CustomerTrusted
+AccelerometerLanding + CustomerTrusted -> AcceleromterTrusted
+CustomerTrusted + AccelerometerTrusted -> CustomerCurated
+SteptrainerLanding + customerCurated -> SteptrainerTrusted
+SteptrainerTrusted + AccelerometerTrusted -> MachineLearningCurated
